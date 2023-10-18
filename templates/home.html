@@ -1,0 +1,16 @@
+{% extends 'base.html' %} {% block base %} {{ super() }}
+<h1 class="home-h1">Home</h1>
+
+<div class="home-div">
+{{ instructions }}
+</div>
+
+<p>
+  To do this, follow the button below and answer a few questions.
+</p>
+<br />
+<p>Thank you!</p>
+<form action="/questions/0">
+  <button class="home-btn">Take Survey</button>
+</form>
+{% endblock %}

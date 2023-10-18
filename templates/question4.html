@@ -1,0 +1,18 @@
+{% extends 'base.html' %} {% block base %} {{ super() }}
+<h1 class="questions-h1">Question 4</h1>
+
+<div class="q1-1">{{ question.question }}</div>
+<br />
+<form method="POST">
+  <div class="radios">
+    <input type="radio" name="response" value="Yes" id="op1" class="op1" /> Yes
+    <br>
+    <input type="radio" name="response" value="No" id="op2" class="op2" /> No
+    <br>
+    <input type="radio" name="response" value="Maybe" id="op3" class="op3" />
+    Maybe
+  </div>
+  <br />
+  <button type="submit" class="questions-btn">Submit Survey!</button>
+</form>
+{% endblock %}

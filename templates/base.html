@@ -1,0 +1,31 @@
+{% block base %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}" />
+    </head>
+  <body>
+    <nav class="navbar">
+      <h4 class="nav-h4">Flask-Tools-Survey:</h4>
+      <ul>
+        <a href="/">HOME</a>
+      </ul>
+      <ul>
+        <a href="/questions/0">SURVEY</a>
+      </ul>
+      <ul>
+        PLACEHOLDER
+      </ul>
+      <ul>
+        PLACEHOLDER
+      </ul>
+    </nav>
+    <br />
+    <h1 class="nav-h1"><b>Flask Tools:</b></h1>
+  </body>
+  {% endblock %}
+</html>

@@ -1,0 +1,23 @@
+{% extends 'base.html' %} {% block base %} {{ super() }}
+
+<h1>Thank You!</h1>
+<p>We appreciate your feedback and look forward to your next visit.</p>
+
+<div class="response-review">
+  <h4 class="TY-h4">Your Responses:</h4>
+  <ul>
+    <li class="TY-li">Q1: {{responses[0]}}</li>
+    <li class="TY-li">Q2: {{responses[1]}}</li>
+    <li class="TY-li">Q3: {{responses[2]}}</li>
+    <li class="TY-li">Q4: {{responses[3]}}</li>
+  </ul>
+</div>
+<p>
+  If you aren't satisfied with your responses, please click the button below.
+  Otherwise, have a great day!
+</p>
+
+<form method="GET" action="/reset-survey">
+  <button type="submit" class="reset-btn">Start Over</button>
+</form>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends 'base.html' %} {% block base %} {{ super() }}
+<h1 class="questions-h1">Survey</h1>
+<p>
+  Thank you for taking time to answer our survey, we appreciate your feedback
+  and strive to work toward providing perfect customer service!
+</p>
+<br>
+<form action="/question/1">
+    <button class="questions-btn">Survey: Question 1
+    </button>
+  </form>
+{% endblock %}
